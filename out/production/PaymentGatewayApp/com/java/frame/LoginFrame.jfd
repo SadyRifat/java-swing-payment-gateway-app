@@ -1,0 +1,45 @@
+JFDML JFormDesigner: "7.0.4.0.360" Java: "11.0.6" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq t {par t {seq {space :::x, comp signUpBtn:::p::p, space s:::p, comp loginBtn:::p::p}, seq {space :p:77:p, par l {comp label2:::p::p, comp label3:::p::p}, space s:::p, par l {seq {space :0:0:x, comp userMail:::p:157:p}, comp userPass:::::x}}}, space :p:91:p}}"
+			"$verticalGroup": "par l {seq l {space :p:62:p, par b {comp label3::b:p::p, comp userMail::b:p::p}, space :p:12:p, par b {comp label2::b:p::p, comp userPass::b:p::p}, space s:::p, par b {comp loginBtn::b:p::p, comp signUpBtn::b:p::p}, space ::89:x}}"
+		} ) {
+			name: "this"
+			"background": new java.awt.Color( 255, 255, 255, 255 )
+			"foreground": sfield java.awt.SystemColor windowText
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "userMail"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "userPass"
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "loginBtn"
+				"text": "Login"
+				"foreground": new java.awt.Color( 0, 0, 0, 255 )
+				"background": new java.awt.Color( 153, 153, 255, 255 )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "loginBtnActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "signUpBtn"
+				"text": "SignUp"
+				"background": new java.awt.Color( 102, 204, 255, 255 )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "signUpBtnActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label2"
+				"text": "Password"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label3"
+				"text": "Email"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 105, 75 )
+			"size": new java.awt.Dimension( 400, 300 )
+		} )
+	}
+}

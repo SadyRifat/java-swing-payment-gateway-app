@@ -1,0 +1,63 @@
+JFDML JFormDesigner: "7.0.4.0.360" Java: "11.0.6" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq t {space :p:63:p, par t {seq {space :0:0:x, comp loginBtn:::p::p, space s:::p, comp registerBtn:::p::p}, seq {par l {comp label3:::p::p, comp label2:::p::p, comp label4::l:p::p, par l {comp label5::t:p::p, comp label1:::p::p}}, space s:::p, par l {par l:l::p {comp lastNameField:::::x, comp emailField:::::x, comp passField:::p:146:p, comp firstNameField::l:::x}, comp cPassField::::148:x}}}, space :p:60:p}}"
+			"$verticalGroup": "par l {seq l {space :p:57:p, par b {comp label1::b:p::p, comp firstNameField::b:p::p}, space u:::p, par b {comp lastNameField::b:p::p, comp label2::b:p::p}, space :p:17:p, par b {comp emailField::b:p::p, comp label3::b:p::p}, space s:::p, par b {comp passField::b:p::p, comp label4::b:p::p}, space s:::p, par b {comp cPassField::b:p::p, comp label5::b:p::p}, space s:::p, par t {comp registerBtn:::p::p, comp loginBtn:::p::p}, space ::31:x}}"
+		} ) {
+			name: "this"
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label1"
+				"text": "First Name"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label2"
+				"text": "Last Name"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label3"
+				"text": "Email"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label4"
+				"text": "Password"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "firstNameField"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "lastNameField"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "emailField"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "passField"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "cPassField"
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "registerBtn"
+				"text": "Register"
+				"background": new java.awt.Color( 153, 153, 255, 255 )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "registerBtnActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "loginBtn"
+				"text": "Login"
+				"background": new java.awt.Color( 102, 204, 255, 255 )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "loginBtnActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label5"
+				"text": "Confirm Password"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 190, 45 )
+			"size": new java.awt.Dimension( 400, 380 )
+		} )
+	}
+}
